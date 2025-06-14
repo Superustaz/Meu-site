@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Avançado</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+	  <h1>Madrassa Hamza Angoche</h1>
+	  <img src="images/Hamza.jpg"
+		alt="Imagem bonita"
+		width="100">
+	  <h2 style="color:blue;">Casuáita super ustaz</h2>
+		<audio controls>
+		  <source src="audio/super_ustaz_3.mp3"
+			type="audio/mpeg"></source></audio>
+	  <nav>
+		<ul>
+		  <li><a href="#inicio">Início</a></li>
+		  <li><a href="#sobre">Sobre</a></li>
+		  <li><a href="#contato">Contato</a></li>
+		</ul>
+	  </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+	  <h2>Bem-vindo!</h2>
+	  <p>Saudação meu caro irmão muçulmano seja bem vindo.
+		Criador do site:Super Ustaz   Data:14/06/2025</p>
+	  <button onclick="mostrarAlerta()">Clique Aqui</button>
+    </section>
+
+    <section id="sobre">
+	  <h2>Sobre</h2>
+	  <p>Este site foi criado para compartilhar os momentos mais memoráveis que passamos na nossa madrassa</p>
+    </section>
+
+    <section id="contato">
+	  <h2>Contato</h2>
+	  <form onsubmit="enviarFormulario(event)">
+		<input type="text" id="nome" placeholder="Seu nome" required>
+		<input type="email" id="email" placeholder="Seu e-mail" required>
+		<textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+		<button type="submit">Enviar</button>
+	  </form>
+	  <p id="resposta-formulario"></p>
+    </section>
+
+    <footer>
+	  <p>&copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
